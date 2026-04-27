@@ -2,11 +2,9 @@ spring:
   application:
     name: BookRecord
   datasource:
-    url: jdbc:postgresql://localhost:5432/books
-    username: books
-    password: postgress
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: validate
+    url: jdbc:sqlite:${user.home}/.books/books.db
+    driver-class-name: org.sqlite.JDBC
+
+open-library:
+  base-url: https://openlibrary.org/api/books
+
