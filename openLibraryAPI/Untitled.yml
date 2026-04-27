@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: https://openlibrary.org/api/books?bibkeys=ISBN:9780132350884&format=json&jscmd=data
+  url: https://openlibrary.org/api/books?bibkeys=ISBN:978-0-486-47061-0&format=json&jscmd=data
   params:
     - name: bibkeys
-      value: ISBN:9780132350884
+      value: ISBN:978-0-486-47061-0
       type: query
     - name: format
       value: json
